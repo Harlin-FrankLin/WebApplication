@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>21JS_Player</title>
+
+    <link href="PlayerStyle.css" rel="stylesheet" />
+
+
+</head>
+<body>
+
+    <audio id="audio">
+        <source id="song" type="audio/mpeg" />
+        <!--<source src="music/nothing.mp3" type="audio/mpeg" />-->
+
+    </audio>
+
+    <div id="ControlPanel" style="width:600px;">
+
+        <!--歌曲播放清單-->
+        <select id="music"></select>
+
+        <div id="FuncBtn">
+
+            <span id="play">4</span>
+            <!--<span id="pause">;</span>-->
+            <span id="stop"><</span>
+            <span id="prevsong">9</span>
+            <span id="prevtime">7</span>
+            <span id="nexttime">8</span>
+            <span id="nextsong">:</span>
+            <span id="muted">V</span>
+            <span id="loop">q</span>
+            <span id="random">s</span>
+            <span id="allloop">`</span>
+            <span id="songbook">@</span>
+
+        </div>
+        <div id="volume">
+            <input id="vol" type="range" min="0" max="100" value="80" />
+            <input id="volM" type="button" value="-" />
+            <input id="volP" type="button" value="+" />
+            <input id="volValue" type="text" value="80" readonly="readonly" />
+        </div>
+
+        <div id="settime">
+            <div id="progress"></div>
+        </div>
+
+        <div id="InfoPanel">
+            <div id="duration">00:00 / 00:00</div>
+            <marquee id="info">請按撥放按鈕~~~~~</marquee>
+            <div id="info2"></div>
+        </div>
+
+        <hr />
+
+        <div id="book" class="hide" title="hide">
+            <div id="Sbook">
+                <div title="music/忘憂大提琴.mp3">忘憂大提琴</div>
+                <div title="music/nothing.mp3">Nothing Gonna Change My Love For You</div>
+                <div title="music/以後別做朋友.mp3">以後別做朋友</div>
+                <div title="music/聽見下雨的聲音.mp3">聽見下雨的聲音</div>
+                <div title="music/tearshining.mp3">夏川里美-淚光閃閃</div>
+                <div title="music/sweety.mp3">汪蘇瀧&By2-有點甜</div>
+                <div title="music/careyou.mp3">鄧麗君-我只在乎你</div>
+                <div title="music/airball.mp3">周杰倫-告白汽球</div>
+                <div title="music/little.mp3">田馥甄-小幸運</div>
+                <div title="music/MV.mp3">旺福-咖啡戀曲</div>
+                <div title="music\moon.mp3">五月天-私奔到月球</div>
+                <div title="music\PartyAnimal.mp3">五月天-派對動物</div>
+
+            </div>
+
+            <div id="Tbook">
+
+            </div>
+            <div id="btnUpdateMusic">
+                更新歌單
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="Player.js"></script>
+
+
+</body>
+</html>

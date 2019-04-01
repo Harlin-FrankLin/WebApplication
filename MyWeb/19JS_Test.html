@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>19JS_Test</title>
+    <style>
+        #car {
+            position: absolute;
+            left: 0;
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+
+    X:<input id="txtX" type="text" />
+    Y:<input id="txtY" type="text" />
+
+    <h1 id="showTime"></h1>
+
+    <div><h3><img id="car" src="Image/car.png" width="50" /></h3></div>
+
+    <script>
+        //name = prompt("請輸入您的大名:");
+        //console.log(name);
+
+        //document.write(name);
+        //window.alert(name);
+        ///////////////////////////////////////////
+
+        var m;
+        m = 123;
+        m = 121.23;
+        m = "aaa123";
+        //console.log(m);
+        ///////////////////////////////////////////
+        var k;
+        k = 99;
+        //console.log(k);
+        //document.write(k);
+        if (k)
+            document.write("有定義");
+        else
+            document.write("沒定義");
+        ///////////////////////////////////////
+        document.write("<hr />");
+
+        //數值資料型態的分類
+        a = 123; //10進位
+        console.log("a=" + a);
+        a = 0123;  //8進位
+        console.log("a=" + a);
+        a = 0678; //10進位
+        console.log("a=" + a);
+
+        a = 0x753AC4; //16進位
+        console.log("a=" + a);
+
+        a = 0.0005; //浮點數
+        console.log("a=" + a);
+        a = 5e-4; //浮點數
+        console.log("a=" + a);
+
+        //JS接受用 e 當變數，C#不接受用 e 當變數，e做為指數的保留字
+        e = 234;
+        document.write("<h4> " + e + "</h4>");
+        document.write("<hr/>");
+        ///////////////////////////////////////
+
+        //alert("您的螢幕解析度為" + screen.width + "*" + screen.height);
+        document.onmousemove = function (evnt) {
+            //alert(evnt.pageX);
+            txtX.value = evnt.pageX;
+            txtY.value = evnt.pageY;
+        }
+
+        /////////////////////////////
+        //小時鐘
+        function showMyTime() {
+            var myDate = new Date();
+            var h = myDate.getHours();
+            var m = myDate.getMinutes();
+            var s = myDate.getSeconds();
+
+            if (h < 10) h = "0" + h;
+            if (m < 10) m = "0" + m;
+            s = s < 10 ? "0" + s : s;
+
+
+            showTime.innerText = h + ":" + m + ":" + s;
+
+            setTimeout(showMyTime, 1000);
+        }
+
+        showMyTime();
+
+        ////////////////////////////////////////////////////////////////////
+        var car = document.getElementById("car");
+        var x = car.offsetLeft;
+        function MyAnimation() {
+           
+            x += 2;
+            console.log(x);
+            car.style.left = x + "px";
+
+
+            if (x <= 500) {
+                //console.log(car.offsetLeft);
+                setTimeout(MyAnimation, 10);
+
+            }
+        }
+
+        MyAnimation();
+
+    </script>
+
+</body>
+</html>

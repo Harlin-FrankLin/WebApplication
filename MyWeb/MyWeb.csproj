@@ -1,0 +1,215 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A890849E-DEC0-44F6-A318-2BE513E82071}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyWeb</RootNamespace>
+    <AssemblyName>MyWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="01Heading.html" />
+    <Content Include="02pre.html" />
+    <Content Include="03hr.html" />
+    <Content Include="04Font.html" />
+    <Content Include="05division.html" />
+    <Content Include="06Item.html" />
+    <Content Include="07Anchor.html" />
+    <Content Include="08Image.html" />
+    <Content Include="09Table.html" />
+    <Content Include="10Form.html" />
+    <Content Include="11CSS_font.html" />
+    <Content Include="12CSS_text.html" />
+    <Content Include="13CSS_color.html" />
+    <Content Include="14CSS_Table.html" />
+    <Content Include="15CSS_Selector.html" />
+    <Content Include="16CSS_Selector_table.html" />
+    <Content Include="17CSS_Position.html" />
+    <Content Include="18CSS_Position2.html" />
+    <Content Include="19JS_Test.html" />
+    <Content Include="20Password.html" />
+    <Content Include="21JS_Player.html" />
+    <Content Include="22JS_DOM - 複製.html" />
+    <Content Include="22JS_DOM.html" />
+    <Content Include="23jQuery_intro.html" />
+    <Content Include="24jQuery_CSS.html" />
+    <Content Include="25jQuery_Selecotr.html" />
+    <Content Include="26jQuery_Selecotr2.html" />
+    <Content Include="27jQuery_DOM.html" />
+    <Content Include="28GridView.aspx" />
+    <Content Include="28jQuery_GoogleAPI.html" />
+    <Content Include="HW2_01林秋輝.html" />
+    <Content Include="Image\ad.jpg" />
+    <Content Include="Image\banner1.jpg" />
+    <Content Include="Image\banner2.jpg" />
+    <Content Include="Image\bottom.jpg" />
+    <Content Include="Image\car.png" />
+    <Content Include="Image\left.jpg" />
+    <Content Include="Image\right.jpg" />
+    <Content Include="Image\top.jpg" />
+    <Content Include="music\airball.mp3" />
+    <Content Include="music\careyou.MP3" />
+    <Content Include="music\little.mp3" />
+    <Content Include="music\moon.mp3" />
+    <Content Include="music\MV.mp3" />
+    <Content Include="music\PartyAnimal.mp3" />
+    <Content Include="music\sweety.mp3" />
+    <Content Include="music\tearshining.MP3" />
+    <Content Include="music\以後別做朋友.mp3" />
+    <Content Include="music\nothing.mp3" />
+    <Content Include="music\忘憂大提琴.mp3" />
+    <Content Include="music\聽見下雨的聲音.mp3" />
+    <Content Include="Player.js" />
+    <Content Include="PlayerStyle.css" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\21JS_Player.html" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\airball.mp3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\careyou.MP3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\little.mp3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\moon.mp3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\MV.mp3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\nothing.mp3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\PartyAnimal.mp3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\sweety.mp3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\tearshining.MP3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\以後別做朋友.mp3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\忘憂大提琴.mp3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\music\聽見下雨的聲音.mp3" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\Player.js" />
+    <Content Include="作業\前端作業三\01林秋輝\完成結果檔\PlayerStyle.css" />
+    <Content Include="作業二素材檔\bottom.jpg" />
+    <Content Include="作業二素材檔\left.jpg" />
+    <Content Include="作業二素材檔\right.jpg" />
+    <Content Include="作業二素材檔\top.jpg" />
+    <Content Include="四眾佛子共勉語.jpg" />
+    <Content Include="Image\立姿八式動禪8.jpg" />
+    <Content Include="Image\行願滿願再發願.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="28GridView.aspx.cs">
+      <DependentUpon>28GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="28GridView.aspx.designer.cs">
+      <DependentUpon>28GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="作業\前端作業三\01林秋輝\作業三.docx" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58300</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58300/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 封裝。請啟用 NuGet 封裝還原，以下載該封裝。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

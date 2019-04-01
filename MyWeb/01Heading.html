@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> 第一個網頁 </title>
+    <style>
+        .h1:hover{
+            background-color:yellow;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Hello World!!! </h1>
+    <h2> Hello World!!! </h2>
+    <h3> Hello World!!! </h3>
+    <h4> Hello World!!! </h4>
+    <h5> Hello World!!! </h5>
+    <h6> Hello World!!! </h6>
+    Hello World!!!
+    Hello World!!!
+    Hello World!!!
+    Hello World!!!<br />
+    Hello World!!!<br />
+    Hello World!!!<br />
+
+    <p>Hello World!!!</p>
+    <p>Hello World!!!</p>
+    <p>Hello World!!!</p>
+
+    <script>
+        for (var j = 1; j <= 5; j++) {
+            for (var i = 1; i <= 6; i++)
+                document.write("<h" + i + " class='h1'>Hello World!!!</h" + i + ">");
+        }
+
+    </script>
+</body>
+</html>
